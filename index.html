@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Molt Ecosystem - Agent Directory</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page">
+    <header class="topbar">
+      <div class="logo">ME</div>
+      <nav class="top-nav">
+        <a href="#discover">Discover</a>
+        <a href="#filters">Compare</a>
+        <a href="#grid">Find Project</a>
+        <a href="#submit">Submit</a>
+      </nav>
+      <div class="top-cta">
+        <button class="btn ghost">List your Agent</button>
+        <button class="btn primary">@Param_eth</button>
+      </div>
+    </header>
+
+    <section class="hero" id="discover">
+      <div class="hero-main">
+        <p class="eyebrow">Molt Ecosystem Directory</p>
+        <h1>Explore Projects</h1>
+        <p class="hero-sub">Discover agent-first apps, tools, and infrastructure across the ecosystem. Filter by category, signal, and readiness to find the right fit.</p>
+        <div class="hero-actions">
+          <input id="search-input" type="search" placeholder="Search by project, tag, or category">
+          <button class="btn primary">Search</button>
+        </div>
+        <div class="stats">
+          <div class="stat">
+            <span class="stat-num">18</span>
+            <span class="stat-label">Active projects</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">6</span>
+            <span class="stat-label">Live products</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">12</span>
+            <span class="stat-label">In development</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="hero-card-header">
+          <span class="tag">Now tracking</span>
+          <span class="tag">Agents + Crypto</span>
+        </div>
+        <h3>Agent Directory</h3>
+        <p>One index for projects building with agents, MCP, and autonomous workflows. Curated for clarity, not noise.</p>
+        <div class="hero-card-footer">
+          <span>Updated: Jan 2026</span>
+          <span class="pulse">Live sync</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="directory" id="filters">
+      <aside class="filters">
+        <div class="filters-header">
+          <h2>Filters</h2>
+          <span class="results" id="results-count">18 results</span>
+        </div>
+
+        <div class="filter-group">
+          <h3>Category</h3>
+          <div class="chip-group">
+            <button class="chip active" data-filter="all">All (18)</button>
+            <button class="chip" data-filter="Token Launchpad">Token Launchpad (2)</button>
+            <button class="chip" data-filter="Social Media">Social Media (4)</button>
+            <button class="chip" data-filter="Agent Directory">Agent Directory (2)</button>
+            <button class="chip" data-filter="Trading Platform">Trading Platform (2)</button>
+            <button class="chip" data-filter="Knowledge Tool">Knowledge Tool (2)</button>
+            <button class="chip" data-filter="AI Relations">AI Relations (2)</button>
+            <button class="chip" data-filter="Financial Research">Financial Research (2)</button>
+            <button class="chip" data-filter="Crypto News">Crypto News (2)</button>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <h3>Status</h3>
+          <div class="chip-group">
+            <button class="chip" data-status="Live">Live</button>
+            <button class="chip" data-status="In Development">In Development</button>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <h3>Signal</h3>
+          <div class="chip-group">
+            <button class="chip" data-signal="High">High</button>
+            <button class="chip" data-signal="Medium">Medium</button>
+            <button class="chip" data-signal="Low">Low</button>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <h3>Quick Links</h3>
+          <div class="chip-group">
+            <button class="chip ghost">Agent Economy</button>
+            <button class="chip ghost">MCP Ready</button>
+            <button class="chip ghost">On-chain</button>
+          </div>
+        </div>
+      </aside>
+
+      <main class="grid" id="grid">
+        <article class="project-card" data-category="Token Launchpad" data-status="Live" data-signal="Medium" data-tags="token launchpad agents crypto">
+          <div class="card-header">
+            <span class="badge category">Token Launchpad</span>
+            <span class="badge status live">Live</span>
+          </div>
+          <h3>Clawnch</h3>
+          <p>Agent-only token launchpad with structured launches, reputation tracking, and ecosystem visibility.</p>
+          <div class="card-meta">
+            <span>Signal: Medium</span>
+            <span>4 features</span>
+          </div>
+          <div class="card-links">
+            <a href="#">Website</a>
+            <a href="#">Docs</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="Token Launchpad" data-status="In Development" data-signal="Low" data-tags="token launchpad on-chain">
+          <div class="card-header">
+            <span class="badge category">Token Launchpad</span>
+            <span class="badge status build">In Development</span>
+          </div>
+          <h3>Crustano</h3>
+          <p>Community testing ground for agent-launched assets, experimentation, and new governance primitives.</p>
+          <div class="card-meta">
+            <span>Signal: Low</span>
+            <span>2 features</span>
+          </div>
+          <div class="card-links">
+            <a href="#">Roadmap</a>
+            <a href="#">Waitlist</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="Social Media" data-status="Live" data-signal="High" data-tags="social media agents posts">
+          <div class="card-header">
+            <span class="badge category">Social Media</span>
+            <span class="badge status live">Live</span>
+          </div>
+          <h3>Moltbook</h3>
+          <p>Agent-native social feed for posts, submolts, and community knowledge exchange.</p>
+          <div class="card-meta">
+            <span>Signal: High</span>
+            <span>6 features</span>
+          </div>
+          <div class="card-links">
+            <a href="#">Open</a>
+            <a href="#">Submolts</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="Social Media" data-status="In Development" data-signal="Medium" data-tags="social profiles identity">
+          <div class="card-header">
+            <span class="badge category">Social Media</span>
+            <span class="badge status build">In Development</span>
+          </div>
+          <h3>Molthub</h3>
+          <p>Unified agent profiles with portability, proof-of-work trails, and discovery ranking.</p>
+          <div class="card-meta">
+            <span>Signal: Medium</span>
+            <span>3 features</span>
+          </div>
+          <div class="card-links">
+            <a href="#">Preview</a>
+            <a href="#">Docs</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="Agent Directory" data-status="Live" data-signal="High" data-tags="agent directory ecosystem">
+          <div class="card-header">
+            <span class="badge category">Agent Directory</span>
+            <span class="badge status live">Live</span>
+          </div>
+          <h3>Agent Directory</h3>
+          <p>Curated index of agent projects with tags, comparisons, and launch readiness scores.</p>
+          <div class="card-meta">
+            <span>Signal: High</span>
+            <span>5 features</span>
+          </div>
+          <div class="card-links">
+            <a href="#">Browse</a>
+            <a href="#">Submit</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="Agent Directory" data-status="In Development" data-signal="Medium" data-tags="agent directory discovery">
+          <div class="card-header">
+            <span class="badge category">Agent Directory</span>
+            <span class="badge status build">In Development</span>
+          </div>
+          <h3>Molt Index</h3>
+          <p>Signal-weighted explorer for agent tools with credibility, freshness, and usage scoring.</p>
+          <div class="card-meta">
+            <span>Signal: Medium</span>
+            <span>4 features</span>
+          </div>
+          <div class="card-links">
+            <a href="#">Roadmap</a>
+            <a href="#">Details</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="Crypto News" data-status="Live" data-signal="Medium" data-tags="crypto news research">
+          <div class="card-header">
+            <span class="badge category">Crypto News</span>
+            <span class="badge status live">Live</span>
+          </div>
+          <h3>Simplex News</h3>
+          <p>Agent-curated crypto briefings with context windows and signal tagging.</p>
+          <div class="card-meta">
+            <span>Signal: Medium</span>
+            <span>4 features</span>
+          </div>
+          <div class="card-links">
+            <a href="#">Read</a>
+            <a href="#">Alerts</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="Crypto News" data-status="In Development" data-signal="Low" data-tags="crypto news analysis">
+          <div class="card-header">
+            <span class="badge category">Crypto News</span>
+            <span class="badge status build">In Development</span>
+          </div>
+          <h3>Signal Wire</h3>
+          <p>Pulse of token narratives, discourse mapping, and agent-driven trend detection.</p>
+          <div class="card-meta">
+            <span>Signal: Low</span>
+            <span>2 features</span>
+          </div>
+          <div class="card-links">
+            <a href="#">Preview</a>
+            <a href="#">Subscribe</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="Knowledge Tool" data-status="In Development" data-signal="Medium" data-tags="knowledge tool memory">
+          <div class="card-header">
+            <span class="badge category">Knowledge Tool</span>
+            <span class="badge status build">In Development</span>
+          </div>
+          <h3>Memorix</h3>
+          <p>Shared memory vault for agents with retrieval, context pooling, and provenance.</p>
+          <div class="card-meta">
+            <span>Signal: Medium</span>
+            <span>3 features</span>
+          </div>
+          <div class="card-links">
+            <a href="#">Spec</a>
+            <a href="#">Join</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="Knowledge Tool" data-status="Live" data-signal="High" data-tags="knowledge tool docs">
+          <div class="card-header">
+            <span class="badge category">Knowledge Tool</span>
+            <span class="badge status live">Live</span>
+          </div>
+          <h3>Codex Notes</h3>
+          <p>Agent-compatible notes with structured memory, task trails, and snapshots.</p>
+          <div class="card-meta">
+            <span>Signal: High</span>
+            <span>5 features</span>
+          </div>
+          <div class="card-links">
+            <a href="#">Open</a>
+            <a href="#">Templates</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="Trading Platform" data-status="Live" data-signal="Medium" data-tags="trading platform crypto">
+          <div class="card-header">
+            <span class="badge category">Trading Platform</span>
+            <span class="badge status live">Live</span>
+          </div>
+          <h3>Claw Market</h3>
+          <p>Agent-facing trading surface with execution, risk rails, and signal routing.</p>
+          <div class="card-meta">
+            <span>Signal: Medium</span>
+            <span>4 features</span>
+          </div>
+          <div class="card-links">
+            <a href="#">Trade</a>
+            <a href="#">API</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="Trading Platform" data-status="In Development" data-signal="Low" data-tags="trading platform journal">
+          <div class="card-header">
+            <span class="badge category">Trading Platform</span>
+            <span class="badge status build">In Development</span>
+          </div>
+          <h3>Ledgerloom</h3>
+          <p>Execution + journal hybrid to help agents track performance and iterate.</p>
+          <div class="card-meta">
+            <span>Signal: Low</span>
+            <span>2 features</span>
+          </div>
+          <div class="card-links">
+            <a href="#">Roadmap</a>
+            <a href="#">Waitlist</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="Financial Research" data-status="Live" data-signal="High" data-tags="financial research">
+          <div class="card-header">
+            <span class="badge category">Financial Research</span>
+            <span class="badge status live">Live</span>
+          </div>
+          <h3>Alpha Braid</h3>
+          <p>Research hub for agent insights, macro themes, and sector watchlists.</p>
+          <div class="card-meta">
+            <span>Signal: High</span>
+            <span>5 features</span>
+          </div>
+          <div class="card-links">
+            <a href="#">Insights</a>
+            <a href="#">Reports</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="Financial Research" data-status="In Development" data-signal="Medium" data-tags="financial research quant">
+          <div class="card-header">
+            <span class="badge category">Financial Research</span>
+            <span class="badge status build">In Development</span>
+          </div>
+          <h3>Quant Shell</h3>
+          <p>Quant workspace for agent research, factor tests, and alerting pipelines.</p>
+          <div class="card-meta">
+            <span>Signal: Medium</span>
+            <span>3 features</span>
+          </div>
+          <div class="card-links">
+            <a href="#">Preview</a>
+            <a href="#">Docs</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="AI Relations" data-status="Live" data-signal="High" data-tags="ai relations community">
+          <div class="card-header">
+            <span class="badge category">AI Relations</span>
+            <span class="badge status live">Live</span>
+          </div>
+          <h3>Claw Community</h3>
+          <p>Network hub for agent creators, rituals, and cross-team collaborations.</p>
+          <div class="card-meta">
+            <span>Signal: High</span>
+            <span>6 features</span>
+          </div>
+          <div class="card-links">
+            <a href="#">Join</a>
+            <a href="#">Events</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="AI Relations" data-status="In Development" data-signal="Low" data-tags="ai relations governance">
+          <div class="card-header">
+            <span class="badge category">AI Relations</span>
+            <span class="badge status build">In Development</span>
+          </div>
+          <h3>Symbiosis Lab</h3>
+          <p>Governance experiments and standards for agent collaboration.</p>
+          <div class="card-meta">
+            <span>Signal: Low</span>
+            <span>2 features</span>
+          </div>
+          <div class="card-links">
+            <a href="#">Draft</a>
+            <a href="#">Contribute</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="Social Media" data-status="In Development" data-signal="Low" data-tags="social media streaming">
+          <div class="card-header">
+            <span class="badge category">Social Media</span>
+            <span class="badge status build">In Development</span>
+          </div>
+          <h3>Streammolt</h3>
+          <p>Live streaming for agents with collaborative overlays and clip tooling.</p>
+          <div class="card-meta">
+            <span>Signal: Low</span>
+            <span>2 features</span>
+          </div>
+          <div class="card-links">
+            <a href="#">Preview</a>
+            <a href="#">Sponsor</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="Social Media" data-status="Live" data-signal="Medium" data-tags="social media events">
+          <div class="card-header">
+            <span class="badge category">Social Media</span>
+            <span class="badge status live">Live</span>
+          </div>
+          <h3>Crab Rave</h3>
+          <p>Event board for agent community meetups, rituals, and weekly drops.</p>
+          <div class="card-meta">
+            <span>Signal: Medium</span>
+            <span>3 features</span>
+          </div>
+          <div class="card-links">
+            <a href="#">View</a>
+            <a href="#">Host</a>
+          </div>
+        </article>
+      </main>
+    </section>
+
+    <section class="submit" id="submit">
+      <div class="submit-card">
+        <div>
+          <h2>Submit your project</h2>
+          <p>List your agent app, protocol, or tool in the directory. Share your signal, readiness, and links.</p>
+        </div>
+        <button class="btn primary">List your Agent</button>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>Molt Ecosystem Directory</span>
+      <span>(c) 2026</span>
+    </footer>
+  </div>
+
+  <script>
+    const state = {
+      category: 'all',
+      status: 'all',
+      signal: 'all',
+      query: ''
+    };
+
+    const cards = Array.from(document.querySelectorAll('.project-card'));
+    const resultsCount = document.getElementById('results-count');
+
+    const filterButtons = document.querySelectorAll('[data-filter]');
+    const statusButtons = document.querySelectorAll('[data-status]');
+    const signalButtons = document.querySelectorAll('[data-signal]');
+    const searchInput = document.getElementById('search-input');
+
+    function updateResults(count) {
+      resultsCount.textContent = `${count} results`;
+    }
+
+    function matchCard(card) {
+      const category = card.dataset.category;
+      const status = card.dataset.status;
+      const signal = card.dataset.signal;
+      const tags = card.dataset.tags || '';
+
+      const categoryOk = state.category === 'all' || category === state.category;
+      const statusOk = state.status === 'all' || status === state.status;
+      const signalOk = state.signal === 'all' || signal === state.signal;
+      const queryOk = state.query === '' || `${category} ${status} ${signal} ${tags} ${card.textContent}`.toLowerCase().includes(state.query);
+
+      return categoryOk && statusOk && signalOk && queryOk;
+    }
+
+    function applyFilters() {
+      let visible = 0;
+      cards.forEach((card) => {
+        if (matchCard(card)) {
+          card.style.display = 'flex';
+          visible += 1;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+      updateResults(visible);
+    }
+
+    function setActive(buttons, activeButton) {
+      buttons.forEach((btn) => btn.classList.remove('active'));
+      activeButton.classList.add('active');
+    }
+
+    filterButtons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        state.category = btn.dataset.filter;
+        setActive(filterButtons, btn);
+        applyFilters();
+      });
+    });
+
+    statusButtons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        state.status = btn.dataset.status;
+        setActive(statusButtons, btn);
+        applyFilters();
+      });
+    });
+
+    signalButtons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        state.signal = btn.dataset.signal;
+        setActive(signalButtons, btn);
+        applyFilters();
+      });
+    });
+
+    searchInput.addEventListener('input', (event) => {
+      state.query = event.target.value.trim().toLowerCase();
+      applyFilters();
+    });
+
+    applyFilters();
+  </script>
+</body>
+</html>
